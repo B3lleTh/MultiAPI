@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movies Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+</head>
+
+<body>
+
+    <h1>Movie Explorer</h1>
+
+    <div class="search">
+        <input id="movieInput" type="text" placeholder="Buscar película">
+
+        <button onclick="searchMovie()">
+            Buscar
+        </button>
+    </div>
+
+    <div id="movie"></div>
+
+    <h2>Ubicación relacionada</h2>
+
+    <div id="map" style="height:400px;width:100%;"></div>
+
+    <h2>Trailer</h2>
+
+    <iframe id="trailer" width="800" height="450" allowfullscreen>
+    </iframe>
+
+    <h2>Guardar favorito</h2>
+
+    <input id="comment" type="text" placeholder="Comentario">
+
+    <button onclick="saveFavorite()">
+        Guardar
+    </button>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
